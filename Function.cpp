@@ -10,12 +10,18 @@ int funcInside() { //function definiton, 함수의 구성
     return 8; // return 값이 상수이므로, function name 앞에 int가 붙음
 }
 
+//FunctionOther.cpp 파일 내에서 만든 함수
+#include "FunctionOther.cpp"
+extern int funcOutside(); // possible remove keyword 'extern'
+int i = 5;
+
 int main(){
     int i = funcInside(); // function call, 어떤 함수를 호출하기 전에는 항상 구성이 된 함수가(선언만 되어 있으면 실행 오류 남!) 먼저 compile되어야 한다. 
+    int i = funcOutside(); // FunctionOther.cpp에서 만든 함수
     cout << "return value : " << i << endl;
+    cout << "Scope resolution operator : " << ::i << endl;
     return 0;
 }
-
 
 /* 
 main{}함수는 항상 존재해야 프로그램 실행이 가능하다.
