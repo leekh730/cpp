@@ -2,7 +2,14 @@
 
 using namespace std;
 
+int loopfor();
+
 int main(){
+    int i = loopfor();
+    return 0;
+}
+
+int loopfor(){
     /*
     int first = 10;
     int first < 20;
