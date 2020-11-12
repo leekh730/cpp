@@ -3,12 +3,13 @@
 using namespace std;
 
 int main(){
-    int length;
-    cout << "Input length : ";
-    cin >> length;
-    cout << length << endl;
+    int first;
+    cout << "Input first : ";
+    cin >> first;
+    cout << first << endl;
 
-    cout << "Input length : ";
-    cin >> length;
-    cout << length << endl;
+    int second;
+    cout << "Input second : ";
+    cin >> second;
+    cout << second << endl;
 }
