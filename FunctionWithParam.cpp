@@ -6,7 +6,11 @@ using namespace std;
 extern int max(int, int); // function declaration
 
 int main(){
-    int first = 100, second = 200, result;
+    int first, second;
+    cout << "Input first : ";
+    cin >> first;
+    cout << "Input second : ";
+    cin >> second;
     // result = max(first, second);
     // cout << "Max value is : " << result << endl;
     cout << "Max value is : " << max(second, first) <<endl;
