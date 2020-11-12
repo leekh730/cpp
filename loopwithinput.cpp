@@ -4,12 +4,12 @@ using namespace std;
 
 int main(){
     int first;
+    int second;
     cout << "Input first : ";
     cin >> first;
-    cout << first << endl;
-
-    int second;
     cout << "Input second : ";
     cin >> second;
-    cout << second << endl;
+    for(first; first < second; first = first + 1 ){
+        cout << first << endl;
+        }
 }
