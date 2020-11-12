@@ -2,7 +2,14 @@
 
 using namespace std;
 
+int loopinput();
+
 int main(){
+    int x = loopinput();
+    return 0;
+}
+
+int loopinput(){
     int first;
     int second;
     cout << "Input first : ";
