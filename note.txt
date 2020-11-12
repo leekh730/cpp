@@ -1,0 +1,14 @@
+[2020.11.12]
+Curve Bracket은 업무 단위로 나뉘어 진다.
+업무의 size가 커지는 이유는 business의 size가 커지기 때문이다. 
+C++에서 main{}(Curve Bracket)이라는 것이 꼭 있어야 실행이 가능하다!(타 언어들도 다 main function이 존재함), 전 세계 모든 프로그램들은 main이라는 function을 찾으며, 이것이 있어야 실행이 가능하다!
+
+*Function의 형태
+return_type(컴퓨터가 하는 답) function_name (parameter list)(우리가 컴퓨터에게 하는 물음) { }
+물음이 하나 일 수도 있고 여러 개 일 수도 있기 때문에 list type의 형식을 같는다. Dict 등 여러 개의 변수를 다루는 집합도 가능하나 C++에는 list type만 존재!
+컴퓨터가 주는 답은 int로 답을 준다.
+원래는 여러 개를 물으면 여러 개의 답을 받을 수 있으나, 현재는 답을 하나만 받는 것으로 이해하자! (Python에서는 tuple type으로 여러 개의 답을 받을 수 있다.)
+
+**예제)Funtion.cpp 찹조(한 파일 안에 function을 만들 때)
+Compile은 위에서 아래로 진행 (Top-Down 방식)
+function의 순서에 따라 진행되는지의 여부를 꼭 확인!
