@@ -2,14 +2,15 @@
 
 using namespace std;
 
-int loopinput();
+int forinput(); int whileinput();
 
 int main(){
-    int x = loopinput();
+    int x = forinput();
+    int y = whileinput();
     return 0;
 }
-/*
-int loopinput(){
+
+int forinput(){
     int first;
     int second;
     cout << "Input first : ";
@@ -20,8 +21,8 @@ int loopinput(){
         cout << first << endl;
         }
 }
-*/
-int loopinput(){
+
+int whileinput(){
     int first;
     int second;
     cout << "Input first : ";
