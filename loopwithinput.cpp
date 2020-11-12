@@ -8,7 +8,7 @@ int main(){
     int x = loopinput();
     return 0;
 }
-
+/*
 int loopinput(){
     int first;
     int second;
@@ -19,4 +19,17 @@ int loopinput(){
     for(first; first < second; first = first + 1 ){
         cout << first << endl;
         }
+}
+*/
+int loopinput(){
+    int first;
+    int second;
+    cout << "Input first : ";
+    cin >> first;
+    cout << "Input second : ";
+    cin >> second;
+    while(first<second){
+        cout << first << endl;
+        ++first;
+    }
 }
