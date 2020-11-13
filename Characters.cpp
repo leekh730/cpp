@@ -1,7 +1,14 @@
 #include <iostream>
 using namespace std;
 
+int character();
+
 int main(){
+    int x = character();
+    return 0;
+}
+
+int character(){
     char ch;
     cin >> ch;
     if(ch == 'N'){
