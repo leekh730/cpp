@@ -12,3 +12,14 @@ return_type(컴퓨터가 하는 답) function_name (parameter list)(우리가 �
 **예제)Funtion.cpp 찹조(한 파일 안에 function을 만들 때)
 Compile은 위에서 아래로 진행 (Top-Down 방식)
 function의 순서에 따라 진행되는지의 여부를 꼭 확인!
+
+[2020.11.13]
+영역참조 - 내가 어디까지 볼 수 있느냐, 전역변수, 지역변수와 상관있다.
+예제)'NameSpaces.cpp'를 보자
+1.namespace first_space{void func(){}}
+2.namespace second_space{void func(){}}
+위 1,2는 같은 이름의 함수를 사용하지만 함수를 다시 namespace의 Curver Bracket으로 감싸주었기 때문에
+컴퓨터 입장에서는 위 두개를 다르게 인식한다. 즉, 컴퓨터가 볼 수 있는 영역은 가장 밖에 싸여진 {}이다.
+
+확장자(.exe, .cpp 등)는 우리(인간)이 보기 편하게 나눠 놓은 것이지 컴퓨터에게는 의미가 없다.
+컴퓨터는 우리가 쪼개놓은 것을 컴파일할 때 다시 모두 합쳐서 하나의 파일로 만들어 인식하게 된다.
