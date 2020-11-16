@@ -20,5 +20,11 @@ int main(){
     swapByReference(first, second); //calling function to swap by reference
     cout << "After swap by refer - first, second : " << first << "," << second << endl;
 
+    swap(first, second); //calling first function to swap the values
+    cout << "After swap - first, second : " << first << "," << second << endl; //after swap - first, second : 100, 200
+
+    swapByReference(first, second); //calling function to swap by reference
+    cout << "After swap by refer - first, second : " << first << "," << second << endl;
+
     return 0; 
 }
