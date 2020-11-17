@@ -25,6 +25,8 @@ struct Books{
 
 enum categories{COMPUTERS, ARTS, BUSINESS};
 
+void printBook(struct Book *book); //printBook 선언, null타입 printBook(변수이름)(struct Book *book)(변수:struct과 포인터를 같이 선언);
+
 int main(){
     struct Book Book1; //Declare Book1 of type Book
     strcpy(Book1.title, "Learn C++ Programming");
@@ -36,6 +38,10 @@ int main(){
     cout << "Book 1 author : " << Book1.author << endl;
     cout << "Book 1 subject : " << Book1.subject << endl;
     cout << "Book 1 id : " << Book1.book_id << endl;
+
+    printBook(&Book1); 
+    cout << "Book 1 subject : " << Book1.subject << endl;
+    
 
     struct Book2 Book2;
     strcpy(Book2.title, "Learn C++ Programming");
@@ -55,4 +61,9 @@ int main(){
     BestSell.print_booklist();
 
     return 0;
+}
+
+void printBook(struct Book *book){
+    cout << "printBook subject : " << book->subject << endl;
+    book->subject = "Change subject in function";
 }
