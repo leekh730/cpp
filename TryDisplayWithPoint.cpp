@@ -6,7 +6,7 @@ using namespace std;
 int main(){
     WINDOW *w;
     w = initscr(); //무조건 init해야함
-    curs_set(0); //visible cursor
+    curs_set(0); //invisible cursor
     
     int max_y = LINES-1, max_x = COLS-COLS; //define in curses.h
     string str_var = to_string(LINES) + to_string(COLS);
