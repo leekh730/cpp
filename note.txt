@@ -64,3 +64,9 @@ int x = new int 4; 라고 하면 1개의 메모리 칸에 4의 길이(칸)를 �
 
 array와 pointer는 동급이다.
 
+[2020.11.18]
+project report
+처음엔 char 즉 한 줄씩 코드를 작성하고 실행해보고, 시간적 여유가 되면 char를 struct으로 구조화 하여 구분하기
+
+main파일에는 호출함수만 적용하고, 그 외 function은 따로 파일들을 만들어서 불러오도록 만들기
+define과 structure는 헤더에 넣기
