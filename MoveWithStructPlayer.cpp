@@ -10,7 +10,7 @@ using namespace std;
 int is_move_okay(int y, int x);
 
 struct Player{
-    static const int shape_size_y = 2, shape_size_x = 2;
+    static const int shape_size_y = 2, shape_size_x = 2; //static은 정적변수, 생성된 스코프(=범위)가 종료된 이후에도 해당 값을 유지하는 변수, 초기화는 한 번만 되며 프로그램 실행 내내 수명이 유지됨 
     void appear(const int &move_y, const int &move_x){
         mvaddstr(move_y, move_x, "@@");
         mvaddstr(move_y + this->shape_size_y -1, move_x, "ll");
