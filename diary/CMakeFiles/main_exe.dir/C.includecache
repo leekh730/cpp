@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/rapa/Documents/cpp/diary/calendar.c
+diary.h
+/home/rapa/Documents/cpp/diary/diary.h
+
+/home/rapa/Documents/cpp/diary/diary.h
+stdio.h
+-
+
+/home/rapa/Documents/cpp/diary/main.c
+diary.h
+/home/rapa/Documents/cpp/diary/diary.h
+
+/home/rapa/Documents/cpp/diary/memo.c
+diary.h
+/home/rapa/Documents/cpp/diary/diary.h
+
